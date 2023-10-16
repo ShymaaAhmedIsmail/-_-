@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Authentication</title>
+	<link rel="stylesheet" href="css/all.min.css">
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/styls.css">
+
+
+</head>
+
+<body class="bg-light">
+	<div class="mt-10">
+		<div class="shadow-lg w-60 h-50 m-auto row cont" id="container">
+
+			
+			<div class="col-lg-6 col-sm-12 text-center sign-up-container  form-container">
+				<form action="#" id="registerForm" onsubmit="saveFormData()">
+					<h1 class="py-5 fw-bold">Create Account</h1>
+					<div class="social-container">
+						<a href="#" class="social rounded-circle p-2 mx-2 text-dark "><i class="fab fa-facebook-f "></i></a>
+						<a href="#" class="social rounded-circle p-2 mx-2 text-dark" ><i class="fab fa-google-plus-g"></i></a>
+						<a href="#" class="social rounded-circle p-2 mx-2 text-dark"><i class="fab fa-linkedin-in"></i></a>
+					</div>
+					<p class="pt-4">or use your email for registration</p>
+					
+					<input type="text" class="form-control w-75 m-auto inp my-3"   placeholder="Name" id="name">
+	
+						<input type="email" class="form-control w-75 m-auto inp my-3"   placeholder="Email" id="email">
+						<input type="password" class="form-control w-75 m-auto inp my-3"  placeholder="password" id="password">
+	
+					
+				<button type="submit" class="btn btn-dark border rounded-5 px-5 py-2 my-2" >Sign UP</button>
+	
+				</form>
+			</div>
+			<div class="col-lg-6 col-sm-12 text-center sign-in-container  form-container" >
+				<h1 class="fw-bold  py-5">Sign in</h1>
+				<div>
+					<a href="#" class="text-dark social rounded-circle p-2 mx-2"><i class="fab fa-facebook-f"></i></a>
+					<a href="#" class="text-dark social rounded-circle p-2 mx-2"><i
+							class="fab fa-google-plus-g"></i></a>
+					<a href="#" class="text-dark social rounded-circle p-2 mx-2"><i class="fab fa-linkedin-in"></i></a>
+				</div>
+				<p class="pt-5">or use your account</p>
+				<form action="#"  onsubmit="validlogin()">
+
+					<input type="email" class="form-control w-75 m-auto inp my-3" placeholder="Email" id="emaillog">
+					<input type="password" class="form-control w-75 m-auto inp my-3" placeholder="password" id="psw" >
+
+					<div> <a href="#" class="text-dark link1">Forgot your password?</a></div>
+					<button type="submit" class="btn btn-dark border rounded-5 px-5 py-2 my-3">Sign In</button>
+
+				</form>
+			</div>
+<div class="overlay-container">
+	<div class="overlay">
+		<div class="col-lg-6 col-sm-12 bg-dark py-5 text-center overlay-panel overlay-left">
+			<h1 class="text-white fw-bold mt-50">
+				Welcome Back!
+			</h1>
+			<p class="text-white my-3">To keep connected with us please login with your personal info</p>
+			<button type="button" class="btn btn-dark border rounded-5 px-5 py-2 my-3 ghost" id="signIn">Sign IN</button>
+
+		</div>
+		<div class="col-lg-6 col-sm-12 bg-dark py-5 text-center overlay-panel overlay-right">
+			<h1 class="text-white fw-bold mt-50">
+				Hello, Friend!
+			</h1>
+			<p class="text-white my-3">Enter your personal details and start journey with us</p>
+			<button type="button" class="btn btn-dark border ghost rounded-5 px-5 py-2 my-3" id="signUp">Sign Up</button>
+
+		</div>
+	</div>
+</div>
+	
+		
+		</div>
+
+
+
+	</div>
+
+
+	<script src="script.js"></script>
+
+</body>
+
+</html>
