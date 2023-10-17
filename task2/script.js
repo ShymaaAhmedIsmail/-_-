@@ -37,10 +37,6 @@ function saveFormData() {
 
 	alert('Regiatered successfully.');
   }
-
-
-
-
   function validlogin() {
 	
 	var email = document.getElementById('emaillog').value;
@@ -52,15 +48,12 @@ function saveFormData() {
 	for(let i =0 ;i<items.length;i++){
 		if (items[i].email == email && items[i].password == password)
 		{
-
 		alert("welcome");
-		
-		
+			
 		}
 		else{
 			alert("your email or passord is not correct")
 		}
 	}
-	 
-
+	
 	}

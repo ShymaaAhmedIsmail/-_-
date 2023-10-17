@@ -89,10 +89,7 @@ position: relative;
 .cont.right-panel-active .overlay-container{
 	transform: translateX(-100%);
 }
-
 .overlay {
-	
-
 	color: #FFFFFF;
 	position: relative;
 	left: -100%;
@@ -101,7 +98,6 @@ position: relative;
   	transform: translateX(0);
 	transition: transform 0.6s ease-in-out;
 }
-
 .cont.right-panel-active .overlay {
   	transform: translateX(50%);
 }
@@ -120,7 +116,6 @@ position: relative;
 	transform: translateX(0);
 	transition: transform 0.6s ease-in-out;
 }
-
 .overlay-left {
 	transform: translateX(-20%);
 }
@@ -137,3 +132,113 @@ position: relative;
 .cont.right-panel-active .overlay-right {
 	transform: translateX(20%);
 }
+/*landing*/
+nav a{
+    color: white !important;
+    font-size: larger !important;
+}
+nav{
+    position: fixed !important;
+    width: 100% !important;
+
+    z-index: 5;
+
+
+}
+a img{
+  
+    width: 30% !important;
+}
+
+.bgcolor{
+    background-color: #000000 !important;
+
+}
+@keyframes slideIn {
+    0% {
+      transform: translateY(0%);
+    }
+    100% {
+      transform: translateY(-20%);
+    }
+    
+  }
+
+
+  .bg2{
+    background-color: #f9fafb !important;
+  }
+
+
+  /* Apply the animation to the image */
+  .img1 {
+    animation: slideIn 3s linear  ;
+    
+    animation-iteration-count: infinite;
+    animation-delay: .5s;
+    animation-direction: alternate
+  }
+
+
+  .wave {
+    display: block;
+    position: relative;
+    height: 40px;
+    width: 100%;
+    background: #000000;
+    transform: scale(1, 1);
+  }
+  
+  .wave:before {
+ 
+  content: "";
+  z-index: -5;
+    display: block;
+    position: absolute;
+    border-radius: 100%;
+    width: 100%;
+    height: 70px;
+    background-color:#000000;
+    right: 0%;
+    bottom: -58%;
+    scale: ();
+  }
+  
+  .wave:after {
+    content: "";
+    display: block;
+    position: absolute;
+    border-radius: 100%;
+    width: 100%;
+    height: 300px;
+    background-color:#000000;
+    left: -15%;
+    bottom: -106%;
+    clip-path: ellipse(100% 15% at -15% 100%);
+  }
+
+  .padiingtop{
+    padding-top: 9% !important;
+  }
+  .pt-7{
+    padding-top: 10% !important;
+  }
+  .h-70{
+    height: 71.5% !important;
+  }
+  .card:hover{
+    transform: translateY(-20px);
+  }
+  .img-height{
+    height: 90px!important;
+  }
+  
+  .img-height:hover{
+    cursor: pointer;
+    opacity: 50%;
+  }
+  .btnHover:hover{
+    background-color: blue !important;
+    color: white !important;
+  }
+  
